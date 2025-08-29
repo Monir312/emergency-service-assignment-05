@@ -45,16 +45,27 @@ header h1 {
 .identity-services {
   width: 7rem;
   margin: 2px 0 10px 0;
+  padding: 7px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.copy-button, .call-button{
+.flex.gap-2 {
+  display: flex;
+  justify-content: center;
+}
+
+.copy-button,
+.call-button {
   width: 50%;
   padding: 7px 4rem;
 }
 
-.copy-button{
+.copy-button {
   border: 2px solid rgba(212, 214, 213, 1);
 }
-.count-copy{
+
+.count-copy {
   font-weight: 500;
 }
