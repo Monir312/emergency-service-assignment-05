@@ -59,7 +59,16 @@ function addHistory(service, number) {
   const list = document.getElementById("callHistory");
   const time = new Date().toLocaleTimeString();
   const li = document.createElement("li");
-  li.textContent = `${service} - ${number} (${time})`;
+
+  li.classList.add("addedHistory"); 
+   li.innerHTML = `
+    <div>
+      <h3>${service}</h3>
+      <p>${number}</p>
+    </div>
+    <div>${time}</div>
+  `;
+
   list.prepend(li); // নতুন কল উপরে দেখাবে
 }
 

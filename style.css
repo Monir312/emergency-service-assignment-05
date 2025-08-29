@@ -104,4 +104,12 @@ ul#callHistory {
   background: #fafafa;
   padding: 1rem;
   margin-top: 1rem;
+  border-radius: 8px;
+}
+
+.addedHistory{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
 }
