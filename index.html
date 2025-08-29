@@ -9,7 +9,7 @@
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-
+<!-- font awesome link  -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -17,7 +17,7 @@
 
 <body class="bg-green-50 font-sans">
   <!-- Header -->
-  <header class="bg-[#fff] text-white p-4 flex justify-between items-center shadow-md">
+  <header class="sticky top-0 bg-[#fff] text-white p-4 flex justify-between items-center shadow-md">
 
     <div class="flex items-center gap-2">
       <img src="./assets/logo.png" class="w-8 h-8" alt="logo">
@@ -32,22 +32,19 @@
         <img width="30" height="30" src="./assets/coin.png" alt=""></span>
       <button class="count-copy bg-[#00A63E] text-white px-3 py-1 rounded-2xl">2 Copy</button>
     </div>
-
   </header>
 
 
   <!-- Banner -->
   <section class="banner text-white text-center py-6 flex flex-col items-center">
     <img src="./assets/logo.png" alt="">
-    <h2 class="text-xl font-bold">জরুরি সেবা ডিরেক্টরি</h2>
+    <h2 class="text-2xl font-bold">জরুরি সেবা ডিরেক্টরি</h2>
     <p class="text-sm mt-1">Government Emergency Services at Your Fingertip – A Project by Government of the People's
       Republic of Bangladesh</p>
   </section>
 
 
   <div class="section-card-history">
-
-
     <!-- Main Section -->
     <main class=" w-9/12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
 
@@ -280,7 +277,7 @@
     </main>
 
     <!-- Call History -->
-    <aside class="w-3/12 mt-6 rounded-xl h-full bg-white border-l shadow-lg p-4 overflow-y-auto">
+    <aside class="aside w-3/12 mt-6 rounded-xl bg-white border-l shadow-lg p-4 overflow-y-auto">
       <div class="sidebar-section">
         <div class="side-left">
           <h3 class="text-sm font-bold mb-2">
@@ -295,9 +292,6 @@
       <ul id="callHistory" class="space-y-2 text-sm text-gray-700"></ul>
     </aside>
   </div>
-
-
-
 
 
   <!-- JavaScript link -->

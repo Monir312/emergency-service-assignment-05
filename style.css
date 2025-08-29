@@ -30,10 +30,13 @@ header h1 {
   height: 92px;
 }
 
-.section-card-history{
+.section-card-history {
   display: flex;
-  margin-right: 20px;
-  height: 180vh;
+  margin-right: 1.2rem;
+}
+
+aside {
+  margin-bottom: 1.2rem;
 }
 
 .single-card {
@@ -41,7 +44,7 @@ header h1 {
 }
 
 .service-icon-heart {
-  margin-bottom: 15px;
+  margin-bottom: 1rem;
 }
 
 .emergency-number {
@@ -76,12 +79,23 @@ header h1 {
   font-weight: 500;
 }
 
-.sidebar-section{
+.sidebar-section {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.side-right-button{
-  padding: 14px 30px;
+
+.side-right-button {
+  padding: 0.8rem 1.8rem;
   border-radius: 50px;
+}
+
+.react-heart strong:hover {
+  color: red;
+}
+
+.service-icon-heart i,
+.single-card button,
+.single-card a {
+  cursor: pointer;
 }
