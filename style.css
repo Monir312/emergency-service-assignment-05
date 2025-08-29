@@ -1,0 +1,48 @@
+header {
+  padding: 0 1.5rem;
+}
+
+.react-heart,
+.count-coin,
+.count-copy {
+  padding: 14px 35px;
+
+}
+
+.react-heart,
+.count-coin {
+  font-weight: bold;
+}
+
+header h1 {
+  line-height: 1.5rem;
+  margin: 24px 0;
+}
+
+.banner {
+  background: linear-gradient(to left, #013223, #006747, #013223);
+  text-align: center;
+  row-gap: 10px;
+}
+
+.banner img {
+  width: 92px;
+  height: 92px;
+}
+
+.single-card {
+  padding: 2rem;
+}
+
+.service-icon-heart {
+  margin-bottom: 15px;
+}
+
+.emergency-number {
+  margin-bottom: 7px;
+}
+
+.identity-services {
+  width: 7rem;
+  margin: 2px 0 10px 0;
+}

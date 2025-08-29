@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emergency Service</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-green-50 font-sans">
+  <!-- Header -->
+  <header class="bg-[#fff] text-white p-4 flex justify-between items-center shadow-md">
+
+    <div class="flex items-center gap-2">
+      <img src="./assets/logo.png" class="w-8 h-8" alt="logo">
+      <h1 class="text-lg font-bold text-[#006747]">Emergency <br>Service</h1>
+    </div>
+
+    <div class="flex items-center gap-4">
+      <span class="react-heart text-black bg-green-50 rounded-2xl">0 ❤️</span>
+      <span class="count-coin bg-green-50 text-black px-3 py-1 rounded-full">100 Coin</span>
+      <button class=" count-copy bg-[#00A63E] text-white px-3 py-1 rounded-2xl">2 Copy</button>
+    </div>
+
+  </header>
+
+
+  <!-- Banner -->
+  <section class="banner text-white text-center py-6 flex flex-col items-center">
+    <img src="./assets/logo.png" alt="">
+    <h2 class="text-xl font-bold">জরুরি সেবা ডিরেক্টরি</h2>
+    <p class="text-sm mt-1">Government Emergency Services at Your Fingertip – A Project by Government of the People's
+      Republic of Bangladesh</p>
+  </section>
+
+  <!-- Main Section -->
+  <main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
+
+    <!-- Single Card -->
+    <div class="single-card bg-white shadow-md rounded-xl p-4 flex flex-col justify-between">
+      <div class="service-icon-heart flex justify-between items-start">
+        <div class="bg-red-100 p-3 rounded-xl">
+          <img src="https://cdn-icons-png.flaticon.com/512/1048/1048945.png" class="w-8 h-8" alt="icon">
+        </div>
+        <button class="text-gray-400 hover:text-red-500">
+          ♥
+        </button>
+      </div>
+
+      <h3 class="text-lg font-bold">জাতীয় জরুরি সেবা</h3>
+      <p class="text-gray-600">National Emergency</p>
+      <p class="emergency-number text-2xl font-extrabold text-[#111111] my-3">999</p>
+      <span class="identity-services bg-gray-200 inline-block px-3 py-1 rounded-full text-sm">সার্বজনীন</span>
+      <div class="flex gap-2">
+        <button onclick="copyNumber('999')" class="px-3 py-1 bg-gray-200 rounded-md">📋 Copy</button>
+        <a href="tel:999" class="px-3 py-1 bg-green-500 text-white rounded-md">📞 Call</a>
+      </div>
+    </div>
+
+
+
+
+
+
+  </main>
+
+  <!-- Call History -->
+  <aside style="display: none;" class="fixed right-0 top-0 w-64 h-full bg-white border-l shadow-lg p-4 overflow-y-auto">
+    <h3 class="text-lg font-bold mb-2">📞 Call History</h3>
+    <ul id="callHistory" class="space-y-2 text-sm text-gray-700"></ul>
+    <button onclick="clearHistory()" class="mt-4 w-full bg-red-500 text-white py-1 rounded-md">Clear</button>
+  </aside>
+
+
+
+
+  <!-- JavaScript link -->
+  <script src="./main.js"></script>
+
+
+</body>
+
+</html>
