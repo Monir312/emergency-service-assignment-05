@@ -12,18 +12,29 @@
   });
 
 
-
-
-
 // coin added and removed function 
 
 
 
-// copied number added function 
+// copy number function 
 function copyNumber(number) {
   navigator.clipboard.writeText(number);
+
+  // Counter update
+  const copyCounter = document.querySelector('.count-copied');
+  if (copyCounter) {
+    let count = parseInt(copyCounter.textContent) || 0;
+    copyCounter.textContent = count + 1;
+  }
   alert("Number copied: " + number);
 }
+
+
+
+
+
+
+
 
 
 
