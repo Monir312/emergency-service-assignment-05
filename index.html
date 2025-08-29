@@ -8,6 +8,10 @@
   <link rel="stylesheet" href="style.css">
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body class="bg-green-50 font-sans">
@@ -20,9 +24,9 @@
     </div>
 
     <div class="flex items-center gap-4">
-      <span class="react-heart text-black bg-green-50 rounded-2xl">0 ❤️</span>
-      <span class="count-coin bg-green-50 text-black px-3 py-1 rounded-full">100 Coin</span>
-      <button class=" count-copy bg-[#00A63E] text-white px-3 py-1 rounded-2xl">2 Copy</button>
+      <span class="react-heart text-black bg-green-50 rounded-2xl flex items-center gap-4"><strong>0</strong> <img width="30" height="30" src="./assets/heart.png" alt=""></span>
+      <span class="count-coin bg-green-50 text-black px-3 py-1 rounded-full flex items-center gap-4"><strong>100</strong> <img width="30" height="30" src="./assets/coin.png" alt=""></span>
+      <button class="count-copy bg-[#00A63E] text-white px-3 py-1 rounded-2xl">2 Copy</button>
     </div>
 
   </header>
@@ -41,22 +45,26 @@
 
     <!-- Single Card -->
     <div class="single-card bg-white shadow-md rounded-xl p-4 flex flex-col justify-between">
-      <div class="service-icon-heart flex justify-between items-start">
+      <div class="service-icon-heart flex justify-between items-center">
         <div class="bg-red-100 p-3 rounded-xl">
-          <img src="https://cdn-icons-png.flaticon.com/512/1048/1048945.png" class="w-8 h-8" alt="icon">
+          <img src="./assets/emergency.png" class="w-8 h-8" alt="icon">
         </div>
         <button class="text-gray-400 hover:text-red-500">
-          ♥
+          <i class="fa-regular fa-heart text-2xl"></i>
         </button>
       </div>
 
       <h3 class="text-lg font-bold">জাতীয় জরুরি সেবা</h3>
       <p class="text-gray-600">National Emergency</p>
-      <p class="emergency-number text-2xl font-extrabold text-[#111111] my-3">999</p>
+      <p class="emergency-number text-[32px] font-bold text-[#111111] my-3">999</p>
       <span class="identity-services bg-gray-200 inline-block px-3 py-1 rounded-full text-sm">সার্বজনীন</span>
       <div class="flex gap-2">
-        <button onclick="copyNumber('999')" class="px-3 py-1 bg-gray-200 rounded-md">📋 Copy</button>
-        <a href="tel:999" class="px-3 py-1 bg-green-500 text-white rounded-md">📞 Call</a>
+        <button onclick="copyNumber('999')" class="copy-button rounded-md flex items-center gap-2"> 
+          <i class="fa-regular fa-copy"></i>Copy</button>
+
+        <a href="tel:999" class="call-button bg-green-500 text-white rounded-md flex items-center gap-2">
+          <i class="fa-solid fa-phone"></i>
+          Call</a>
       </div>
     </div>
 

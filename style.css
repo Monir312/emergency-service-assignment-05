@@ -46,3 +46,15 @@ header h1 {
   width: 7rem;
   margin: 2px 0 10px 0;
 }
+
+.copy-button, .call-button{
+  width: 50%;
+  padding: 7px 4rem;
+}
+
+.copy-button{
+  border: 2px solid rgba(212, 214, 213, 1);
+}
+.count-copy{
+  font-weight: 500;
+}
