@@ -34,6 +34,8 @@ function makeCall(link, cost) {
   let coins = parseInt(coinCounter.textContent);
   const number = link.getAttribute('href').replace('tel:', '');
 
+  const serviceTitle = document.querySelector('.service-title').textContent;
+
   const serviceText = document.querySelector('.service-text').textContent;
 
   if (coins <= 0 || coins < cost) {
@@ -47,18 +49,9 @@ function makeCall(link, cost) {
 
   coins -= cost;
   coinCounter.textContent = coins;
+
+  addHistory(serviceTitle, number);
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 //call history function 
@@ -67,10 +60,9 @@ function addHistory(service, number) {
   const time = new Date().toLocaleTimeString();
   const li = document.createElement("li");
   li.textContent = `${service} - ${number} (${time})`;
-  list.prepend(li);
+  list.prepend(li); // নতুন কল উপরে দেখাবে
 }
 
-// Example usage: addHistory("Police", "999");
 function clearHistory() {
   document.getElementById("callHistory").innerHTML = "";
 }

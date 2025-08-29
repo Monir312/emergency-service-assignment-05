@@ -99,3 +99,9 @@ aside {
 .single-card a {
   cursor: pointer;
 }
+
+ul#callHistory {
+  background: #fafafa;
+  padding: 1rem;
+  margin-top: 1rem;
+}
