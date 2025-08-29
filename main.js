@@ -12,11 +12,7 @@
   });
 
 
-// coin added and removed function 
-
-
-
-// copy number function 
+  // copy number function 
 function copyNumber(number) {
   navigator.clipboard.writeText(number);
 
@@ -28,6 +24,33 @@ function copyNumber(number) {
   }
   alert("Number copied: " + number);
 }
+
+
+
+
+// coin added and removed function 
+function makeCall(link, cost) {
+  const coinCounter = document.querySelector('.count-coin strong');
+  let coins = parseInt(coinCounter.textContent);
+  const number = link.getAttribute('href').replace('tel:', '');
+
+  const serviceText = document.querySelector('.service-text').textContent;
+
+  if (coins <= 0 || coins < cost) {
+    alert("আপনার পর্যাপ্ত কয়েন নেই; কল করতে কমপক্ষে " + cost + " কয়েন লাগবে।");
+    event.preventDefault(); 
+    return false;
+  }
+
+  alert("Calling: " + serviceText + "  " + number + " ....");
+
+
+  coins -= cost;
+  coinCounter.textContent = coins;
+}
+
+
+
 
 
 
