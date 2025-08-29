@@ -30,8 +30,14 @@ header h1 {
   height: 92px;
 }
 
+.section-card-history{
+  display: flex;
+  margin-right: 20px;
+  height: 180vh;
+}
+
 .single-card {
-  padding: 2rem;
+  padding: 1.2rem;
 }
 
 .service-icon-heart {
@@ -68,4 +74,14 @@ header h1 {
 
 .count-copy {
   font-weight: 500;
+}
+
+.sidebar-section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.side-right-button{
+  padding: 14px 30px;
+  border-radius: 50px;
 }
